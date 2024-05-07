@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       {/* FIRST MAIN  */}
       <div className=" flex w-full ">
-        <div className=" flex-basis-2/3 w-full bg-red-900">
+        <div className=" flex-basis-2/3 w-full ">
           <img alt="img" src="/main-page-img.png" className=""></img>
         </div>
         <div className=" flex-basis-1/3 w-[100%] bg-[#EAE4C0] flex flex-col items-start justify-center pl-5 pr-5">
