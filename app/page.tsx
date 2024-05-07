@@ -21,7 +21,7 @@ export default function Home() {
           <p className="  text-sm  2xl:text-xl">
             The epitome of luxury and sophistication in the digital realm.
           </p>
-          <button className="  justify-self-start outline-black sm:mt-5  mt-10 sm:pt-0 sm:pb-0  sm:pl-[0.3rem] sm:pr-[0.3rem]  sm:text-[1rem]  border border-black pt-2 pb-2 pl-4 pr-4">
+          <button className=" transition duration-300 shadow-md hover:shadow-lg hover:font-semibold justify-self-start outline-black sm:mt-5  mt-10 sm:pt-0 sm:pb-0  sm:pl-[0.3rem] sm:pr-[0.3rem]  sm:text-[1rem]  border border-black pt-2 pb-2 pl-4 pr-4">
             Learn More
           </button>
         </div>
@@ -54,10 +54,10 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col bg-[#A7C585] basis-1/3 xl:gap-10 lg:gap-10 md:gap-5 gap-3  justify-center items-center text-center ">
-          <div className="pt-4 text-white font-semibold Brand essence text-xl  md:text-2xl lg:text-3xl xl:text-4xl ">
+          <div className="pt-4 text-white font-semibold Brand essence text-3xl sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl">
             Brand essence
           </div>
-          <p className="text-center sm:text-start px-5 pb-5  text-white text-xs lg:text-sm xl:text-lg">
+          <p className="text-center sm:text-start px-5 pb-5  text-white text-xs lg:text-sm xl:text-lg 2xl:text-lg">
             We strive to create a marketplace where every piece tells a unique
             story and becomes a cherished heirloom for generations to come. We
             believe in the transformative power of diamonds to capture the
@@ -71,7 +71,9 @@ export default function Home() {
         id="Why_Us"
       >
         <div className=" w-full sm:flex-1 sm:text-center basis-1/2 flex  flex-col items-start pt-20 justify-start pl-10 sm:pl-5 sm:pt-10">
-          <h1 className=" font-semibold  text-4xl sm:text-center w-full">WHY CHOOSE US?</h1>
+          <h1 className=" font-semibold  text-4xl sm:text-center w-full">
+            WHY CHOOSE US?
+          </h1>
           <p className=" text-start text-xl   mt-4 sm:text-justify w-full sm:px-4">
             Join an exclusive community of like-minded individuals who share
             your passion for the finer things in life. Jewels provides a
@@ -79,7 +81,7 @@ export default function Home() {
             around the globe.
           </p>
         </div>
-        <div className="sm:hidden  w-full basis-1/2 gap-1 p-5 bg-[#EAE4C0]  ">
+        <div className="sm:hidden rounded-l-lg w-full basis-1/2 gap-1 p-5 bg-[#EAE4C0]  ">
           <div className="grid grid-cols-2 w-full">
             <div className="w-full h-full flex justify-center items-center ">
               <div className="flex flex-col justify-center items-center gap-2">
@@ -93,7 +95,7 @@ export default function Home() {
               <div className="flex flex-col justify-center items-center gap-2">
                 <img className="object-contain " src="/11.png"></img>
                 <h3 className=" text-xs text-center w-[65%]  ">
-                  Targeting niche customers from tier 1 adn 2 cities
+                Monthly marketing tools to grow your business
                 </h3>
               </div>
             </div>
@@ -101,7 +103,7 @@ export default function Home() {
               <div className="flex flex-col justify-center items-center gap-2">
                 <img className="object-contain " src="/13.png"></img>
                 <h3 className=" text-xs text-center w-[65%]  ">
-                  Targeting niche customers from tier 1 adn 2 cities
+                We take care of insurance and shipping
                 </h3>
               </div>
             </div>
@@ -109,7 +111,7 @@ export default function Home() {
               <div className="flex flex-col justify-center items-center gap-2">
                 <img className="object-contain " src="/14.png"></img>
                 <h3 className=" text-xs text-center w-[65%]  ">
-                  Targeting niche customers from tier 1 adn 2 cities
+                Establish an unparalleled distribution network.
                 </h3>
               </div>
             </div>
@@ -136,15 +138,22 @@ export default function Home() {
       {/* Fall in the city */}
       <div className=" flex w-[100%] mt-20  gap-4  ">
         <div className=" basis-1/2 w-[100%] ">
-          <img alt="img" src="/women.png" className="w-full h-full max-h-[30rem]"></img>
+          <img
+            alt="img"
+            src="/women.png"
+            className="w-full h-full max-h-[30rem]"
+          ></img>
         </div>
         <div className="sm:py-3 basis-1/2 width-[100%] bg-[#A7C585] flex flex-col items-center justify-center pl-5 pr-5">
-          <div className="flex flex-col sm:gap-6 gap-14 justify-center h-full max-w-[30rem]">
-            <div style={{fontFamily:"monospace"}} className="sm:mt-3 text-center text-white text-xl  font-bold 2xl:text-6xl  lg:text-3xl  xl:text-4xl  md:text-2xl ">
+          <div className="flex flex-col sm:gap-6 gap-14 justify-center items-center h-full max-w-[30rem]">
+            <div
+              style={{ fontFamily: "monospace" }}
+              className="sm:mt-3 text-center text-white text-xl  font-bold 2xl:text-6xl  lg:text-3xl  xl:text-4xl  md:text-2xl "
+            >
               {" "}
               FALL IN THE CITY
             </div>
-            <p className="max-w-[25rem]  text-white text-sm sm:text-xs  2xl:text-xl flex justify-center items-center text-center">
+            <p className="max-w-[25rem]  text-white text-sm sm:text-xs xl:text-xl  2xl:text-xl flex justify-center items-center text-center">
               We prioritize your privacy and security with state-of-the-art
               encryption and cutting-edge security features, ensuring that your
               personal information and transactions are always protected. With
@@ -166,7 +175,9 @@ export default function Home() {
       <SliderEnd></SliderEnd>
 
       <div className="bg-[#EAE4C0] min-h-32 flex flex-col justify-center items-center">
-        <p className="font-semibold sm:text-xl md:text-2xl text-3xl">Get Jwel</p>
+        <p className="font-semibold sm:text-xl md:text-2xl text-3xl">
+          Get Jwel
+        </p>
         <p className="font-semibold sm:text-xl md:text-2xl text-3xl">Sellers</p>
       </div>
     </div>

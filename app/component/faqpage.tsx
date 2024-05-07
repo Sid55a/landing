@@ -61,7 +61,7 @@ const FAQsPage = () => {
                   className=" rounded-xl px-4 w-full max-w-[47rem] "
                 >
                   <AccordionItem value={`item-${i}`} className="border-none">
-                    <AccordionTrigger className="px-2 bg-gray-200 rounded-xl ">
+                    <AccordionTrigger className="px-4 bg-gray-200 rounded-xl ">
                       {fnq?.title}
                     </AccordionTrigger>
                     <AccordionContent className="bg-gray-100 w-full px-4 rounded-lg py-2 text-justify">
