@@ -1,0 +1,117 @@
+"use client";
+
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
+const data = [
+  {
+    img: "/main-page-img.png",
+    name: "JERIN JOHNSON",
+    desc: "I've been using the Jewels app for a few months now, and I am thoroughly impressed. From the very first moment I opened the app, I could tell it was something special. The interface is not only beautiful but also extremely intuitive, making it easy for me to navigate through its luxurious offerings.",
+  },
+  {
+    img: "/main-page-img.png",
+    name: "JERIN JOHNSON",
+    desc: "I've been using the Jewels app for a few months now, and I am thoroughly impressed. From the very first moment I opened the app, I could tell it was something special. The interface is not only beautiful but also extremely intuitive, making it easy for me to navigate through its luxurious offerings.",
+  },
+  {
+    img: "/main-page-img.png",
+    name: "JERIN JOHNSON",
+    desc: "I've been using the Jewels app for a few months now, and I am thoroughly impressed. From the very first moment I opened the app, I could tell it was something special. The interface is not only beautiful but also extremely intuitive, making it easy for me to navigate through its luxurious offerings.",
+  },
+  {
+    img: "/main-page-img.png",
+    name: "JERIN JOHNSON",
+    desc: "I've been using the Jewels app for a few months now, and I am thoroughly impressed. From the very first moment I opened the app, I could tell it was something special. The interface is not only beautiful but also extremely intuitive, making it easy for me to navigate through its luxurious offerings.",
+  },
+  {
+    img: "/main-page-img.png",
+    name: "JERIN JOHNSON",
+    desc: "I've been using the Jewels app for a few months now, and I am thoroughly impressed. From the very first moment I opened the app, I could tell it was something special. The interface is not only beautiful but also extremely intuitive, making it easy for me to navigate through its luxurious offerings.",
+  },
+  {
+    img: "/main-page-img.png",
+    name: "JERIN JOHNSON",
+    desc: "I've been using the Jewels app for a few months now, and I am thoroughly impressed. From the very first moment I opened the app, I could tell it was something special. The interface is not only beautiful but also extremely intuitive, making it easy for me to navigate through its luxurious offerings.",
+  },
+  {
+    img: "/main-page-img.png",
+    name: "JERIN JOHNSON",
+    desc: "I've been using the Jewels app for a few months now, and I am thoroughly impressed. From the very first moment I opened the app, I could tell it was something special. The interface is not only beautiful but also extremely intuitive, making it easy for me to navigate through its luxurious offerings.",
+  },
+  {
+    img: "/main-page-img.png",
+    name: "JERIN JOHNSON",
+    desc: "I've been using the Jewels app for a few months now, and I am thoroughly impressed. From the very first moment I opened the app, I could tell it was something special. The interface is not only beautiful but also extremely intuitive, making it easy for me to navigate through its luxurious offerings.",
+  },
+  {
+    img: "/main-page-img.png",
+    name: "JERIN JOHNSON",
+    desc: "I've been using the Jewels app for a few months now, and I am thoroughly impressed. From the very first moment I opened the app, I could tell it was something special. The interface is not only beautiful but also extremely intuitive, making it easy for me to navigate through its luxurious offerings.",
+  },
+  {
+    img: "/main-page-img.png",
+    name: "JERIN JOHNSON",
+    desc: "I've been using the Jewels app for a few months now, and I am thoroughly impressed. From the very first moment I opened the app, I could tell it was something special. The interface is not only beautiful but also extremely intuitive, making it easy for me to navigate through its luxurious offerings.",
+  },
+  {
+    img: "/main-page-img.png",
+    name: "JERIN JOHNSON",
+    desc: "I've been using the Jewels app for a few months now, and I am thoroughly impressed. From the very first moment I opened the app, I could tell it was something special. The interface is not only beautiful but also extremely intuitive, making it easy for me to navigate through its luxurious offerings.",
+  },
+];
+
+export const SliderReview = () => {
+  return (
+    <div className="flex justify-center items-center w-full ">
+      <Carousel
+        className="w-full "
+        opts={{ align: "start", loop: true }}
+        plugins={[
+          Autoplay({
+            delay: 5000,
+          }),
+        ]}
+      >
+        <CarouselContent className=" -ml-1">
+          {data.map((data, index) => (
+            <CarouselItem key={index} className="pl-1 max-w-[20.2rem] ">
+              <div  className="p-2 h-[300px]">
+                <div className=" h-[75px] ">
+                  {/* <img
+         width={100}
+         height={100}
+          className='rounded-full  '
+         src="/main-page-img.png"
+         ></img> */}
+                </div>
+                <div className="h-[200px] sm:h-[300px]  bg-[#efeeee] relative rounded-xl">
+                  <img
+                    width={100}
+                    height={100}
+                    className="rounded-full  absolute sm:-top-[15%] -top-[25%] left-5 "
+                    src="/main-page-img.png"
+                  ></img>
+                  <div className=" absolute top-[25%] ">
+                    <h1 className=" pl-5 font-semibold">{data.name}</h1>
+                    <p className=" text-[0.6rem]  p-5">{data.desc}</p>
+                  </div>
+                </div>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        {/* <CarouselPrevious />
+      <CarouselNext /> */}
+      </Carousel>
+    </div>
+   
+  );
+};
