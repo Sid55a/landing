@@ -9,26 +9,26 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-const data = [
-  { id: "1", img: "/1.png" },
-  { id: "2", img: "/2.png" },
-  { id: "3", img: "/3.png" },
-  { id: "4", img: "/4.png" },
-  { id: "1", img: "/1.png" },
-  { id: "2", img: "/2.png" },
-  { id: "3", img: "/3.png" },
-  { id: "4", img: "/4.png" },
-  { id: "1", img: "/1.png" },
-  { id: "2", img: "/2.png" },
-  { id: "3", img: "/3.png" },
-  { id: "4", img: "/4.png" },
-  { id: "1", img: "/1.png" },
-  { id: "2", img: "/2.png" },
-  { id: "3", img: "/3.png" },
-  { id: "4", img: "/4.png" },
-];
-
 export const SliderEnd = () => {
+  const data = [
+    { id: "1", img: "/1.png" },
+    { id: "2", img: "/2.png" },
+    { id: "3", img: "/3.png" },
+    { id: "4", img: "/4.png" },
+    { id: "1", img: "/1.png" },
+    { id: "2", img: "/2.png" },
+    { id: "3", img: "/3.png" },
+    { id: "4", img: "/4.png" },
+    { id: "1", img: "/1.png" },
+    { id: "2", img: "/2.png" },
+    { id: "3", img: "/3.png" },
+    { id: "4", img: "/4.png" },
+    { id: "1", img: "/1.png" },
+    { id: "2", img: "/2.png" },
+    { id: "3", img: "/3.png" },
+    { id: "4", img: "/4.png" },
+  ];
+
   return (
     <div className="flex justify-center items-center w-full ">
       {" "}
@@ -43,7 +43,10 @@ export const SliderEnd = () => {
       >
         <CarouselContent className=" ">
           {data.map((data, index) => (
-            <CarouselItem key={index} className=" max-w-[13.5rem] max-h-[10rem]">
+            <CarouselItem
+              key={index}
+              className=" max-w-[13.5rem] max-h-[10rem]"
+            >
               <div className="">
                 <Card className="w-56 h-48 border-none">
                   <CardContent className="flex aspect-square items-center justify-center p-1">

@@ -10,40 +10,26 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-export function Example() {
-  return (
-    <Carousel
-      plugins={[
-        Autoplay({
-          delay: 2000,
-        }),
-      ]}
-    >
-      // ...
-    </Carousel>
-  );
-}
-
-const data = [
-  { id: "1", img: "/11.png" },
-  { id: "2", img: "/12.png" },
-  { id: "3", img: "/13.png" },
-  { id: "4", img: "/14.png" },
-  { id: "1", img: "/11.png" },
-  { id: "2", img: "/12.png" },
-  { id: "3", img: "/13.png" },
-  { id: "4", img: "/14.png" },
-  { id: "1", img: "/11.png" },
-  { id: "2", img: "/12.png" },
-  { id: "3", img: "/13.png" },
-  { id: "4", img: "/14.png" },
-  { id: "1", img: "/11.png" },
-  { id: "2", img: "/12.png" },
-  { id: "3", img: "/13.png" },
-  { id: "4", img: "/14.png" },
-];
-
 export const SliderMain = () => {
+  const data = [
+    { id: "1", img: "/11.png" },
+    { id: "2", img: "/12.png" },
+    { id: "3", img: "/13.png" },
+    { id: "4", img: "/14.png" },
+    { id: "1", img: "/11.png" },
+    { id: "2", img: "/12.png" },
+    { id: "3", img: "/13.png" },
+    { id: "4", img: "/14.png" },
+    { id: "1", img: "/11.png" },
+    { id: "2", img: "/12.png" },
+    { id: "3", img: "/13.png" },
+    { id: "4", img: "/14.png" },
+    { id: "1", img: "/11.png" },
+    { id: "2", img: "/12.png" },
+    { id: "3", img: "/13.png" },
+    { id: "4", img: "/14.png" },
+  ];
+
   return (
     <div className="flex justify-center items-center w-full ">
       {" "}
