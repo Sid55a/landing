@@ -12,10 +12,10 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
-     
+      padding: "2rem",     
     },
     screens: {
+      'xs':{'max':'500px'},
       'sm': {'max': '639px'},
       'md': {'min': '640px', 'max': '767px'},
       'lg': {'min': '768px', 'max': '1023px'},

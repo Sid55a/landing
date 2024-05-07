@@ -45,7 +45,7 @@ const FAQsPage = () => {
   return (
     <div className="w-full">
       <main className="h-full flex-1 flex-col  p-4  bg-white rounded-2xl relative">
-        <h2 className="text-3xl w-full flex font-bold justify-center items-center">
+        <h2 className="xs:text-center text-3xl w-full flex font-bold justify-center items-center">
           Frequently Asked Questions
         </h2>
         <div className="w-full h-auto my-10 ">
