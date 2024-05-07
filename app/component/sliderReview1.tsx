@@ -81,10 +81,10 @@ export const SliderReview = () => {
       >
         <CarouselContent className=" -ml-1">
           {data.map((data, index) => (
-            <CarouselItem key={index} className="pl-1 max-w-[20.2rem] ">
+            <CarouselItem key={index} className="pl-1 sm:max-w-[15rem] max-w-[20.2rem] ">
               <div className="p-2 h-[300px]">
                 <div className=" h-[75px] "></div>
-                <div className="h-[200px] sm:h-[300px]  bg-[#efeeee] relative rounded-xl">
+                <div className="h-[200px] sm:h-[280px]  bg-[#efeeee] relative rounded-xl">
                   <img
                     width={100}
                     height={100}
@@ -93,7 +93,7 @@ export const SliderReview = () => {
                   ></img>
                   <div className=" absolute top-[25%] ">
                     <h1 className=" pl-5 font-semibold">{data.name}</h1>
-                    <p className=" text-[0.6rem]  p-5">{data.desc}</p>
+                    <p className=" text-[0.6rem]   p-5 sm:pb-6 ">{data.desc}</p>
                   </div>
                 </div>
               </div>

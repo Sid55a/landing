@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter,Montserrat } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import NavBar from "./component/navBar";
 
@@ -18,9 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NavBar></NavBar>
-        {children}
-        </body>
+        <div className="max-w-full">
+          <NavBar></NavBar>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

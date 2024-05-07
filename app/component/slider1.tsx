@@ -44,9 +44,9 @@ export const SliderMain = () => {
       >
         <CarouselContent className=" -ml-1">
           {data.map((data, index) => (
-            <CarouselItem key={index} className="pl-1 max-w-[13.4rem] ">
+            <CarouselItem key={index} className="pl-1 sm:max-w-[10.2rem]  max-w-[13.4rem] ">
               <div className="">
-                <Card className="w-52 h-52">
+                <Card className="sm:w-40 sm:h-40 w-52 h-52">
                   <CardContent className="flex aspect-square items-center justify-center p-2">
                     <img
                       src={data.img}

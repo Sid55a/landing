@@ -45,7 +45,7 @@ export const SliderEnd = () => {
           {data.map((data, index) => (
             <CarouselItem
               key={index}
-              className=" max-w-[13.5rem] max-h-[10rem]"
+              className="sm:max-w-[10rem] sm:max-h-[7rem] max-w-[13.5rem] max-h-[10rem]"
             >
               <div className="">
                 <Card className="w-56 h-48 border-none">

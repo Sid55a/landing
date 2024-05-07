@@ -1,20 +1,32 @@
-import React from 'react'
+"use client";
+import { handleSmoothScroll } from "@/func";
+import React from "react";
 
 const NavBar = () => {
   return (
-    <div>
-     <div className=" p-10 ">
-    <div className=" flex justify-between">
-      <h1 className="font-semibold text-2xl sm:text-sm ">GetJwel Sellers</h1>
-      <div className=" flex gap-5">
-        <button className=" bg-white border-none outline-none sm:text-xs  ">Why Us?</button>
-        <button className="bg-[#EAE4C0] pt-2 pb-2 pl-4 pr-4 sm:pt-0 sm:pb-0  sm:pl-[0.3rem] sm:pr-[0.3rem]  sm:text-[0.5rem]" >Dashboard</button>
-        <button className="bg-[#EAE4C0] pt-2 pb-2 pl-4 pr-4 sm:pt-0 sm:pb-0  sm:pl-[0.3rem] sm:pr-[0.3rem]  sm:text-[0.5rem] " >Become a Seller</button>
+    <div className="w-full">
+      <div className="p-3 pb-3 lg:p-10 lg:pb-8 xl:p-10 xl:pb-8 md:p-5 ">
+        <div className=" flex justify-between">
+          <h1 className="font-semibold md:text-2xl xl:text-3xl lg:text-3xl sm:text-sm ">
+            GetJwel Sellers
+          </h1>
+          <div className=" flex gap-5">
+            <button className=" bg-white border-none outline-none sm:text-xs">
+              <a href="#Why_Us" onClick={handleSmoothScroll}>
+                Why Us?
+              </a>
+            </button>
+            <button className="bg-[#EAE4C0] pt-2 pb-2 pl-4 pr-4 sm:pt-0 sm:pb-0  sm:pl-[0.3rem] sm:pr-[0.3rem]  sm:text-[0.5rem]">
+              Dashboard
+            </button>
+            <button className="bg-[#EAE4C0] pt-2 pb-2 pl-4 pr-4 sm:pt-0 sm:pb-0  sm:pl-[0.3rem] sm:pr-[0.3rem]  sm:text-[0.5rem] ">
+              Become a Seller
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-   </div>
-    </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
